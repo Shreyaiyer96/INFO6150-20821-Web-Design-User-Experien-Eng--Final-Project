@@ -1,4 +1,4 @@
-# DAVEWORLD's GYM
+<!-- # DAVEWORLD's GYM
 ![LandingPage](https://user-images.githubusercontent.com/107508295/191951748-b895c770-52de-4f28-9315-d5670387b2ee.png)
 
 ## About The Project
@@ -52,4 +52,4 @@ to see the project [click me](https://eniola-gym-portfolio.vercel.app/)
 
 Eniola Ademola - [@tweet me](https://twitter.com/_daveworld) - it.eniolaademola@gmail.com
 
-Github Repo: [EniolaAdemola/GymPortfolio](https://github.com/EniolaAdemola/gym-portfolio)
+Github Repo: [EniolaAdemola/GymPortfolio](https://github.com/EniolaAdemola/gym-portfolio) -->

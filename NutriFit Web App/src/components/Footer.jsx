@@ -72,7 +72,7 @@ const Footer = () => {
 				</article>
 			</div>
 			<div className="footer__copyright">
-				<small> &copy; Eniola Ademola </small>
+				<small> &copy; Nutri.Fit App </small>
 			</div>
 		</footer>
 	);
