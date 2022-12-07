@@ -13,8 +13,8 @@ import Footer from "./components/Footer";
 import Yoga from "./pages/newPages/Yoga";
 import Login from "./pages/login/login";
 import Kickboxing from "./pages/kickboxing/Kickboxing";
-import DanceFitness from "./pages/newPages/DanceFitness";
-import WeightLifting from "./pages/newPages/WeightLifting";
+import { Dance } from "./pages/dance/Dance";
+import Weight from "./pages/weight/Weight";
 import Products from "./pages/Products/Products";
 import { useState, useEffect} from 'react';
 import {commerce} from "./pages/lib/commerce"
@@ -49,8 +49,8 @@ const App = () => {
 				<Route path="login" element={<Login />} />
 				<Route path="newPages" element={<Yoga />} />
 				<Route path="kickboxing" element={<Kickboxing />} />
-				<Route path="newPages" element={<DanceFitness />} />
-				<Route path="newPages" element={<WeightLifting />} />
+				<Route path="dance" element={<Dance />} />
+				<Route path="weight" element={<Weight />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
