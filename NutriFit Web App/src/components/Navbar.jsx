@@ -23,7 +23,7 @@ const Navbar = () => {
 			<div className="container nav__container">
 				<Link to="/" className="logo" onClick={handleNavToggle}>
 					{/* <img src={Logo} alt="Nav-logo" /> */}
-					<p className="Logo">NutriFit</p>
+					<p className="Logo">Nutri.Fit</p>
 				</Link>
 				<ul
 					className={`nav__links ${isNavShowing ? "show__nav" : "hide__nav"}`}

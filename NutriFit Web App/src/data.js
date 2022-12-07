@@ -45,7 +45,7 @@ export const programs = [
         icon: <SiOpenaigym/>,
         title: "Yoga",
         info: "Let's go deeper in your spiritual practice!",
-        more: "Every class has an array of breathing techniques, a variety of meditation techniques. Helps in improving confidence while gaining a stronger body.",
+        more: "Every class has an array of breathing techniques, a variety of meditation techniques. Helps in improving confidence while gaining a stronger body along with mindfullness.",
         path: "/newPages"
     },
     {
@@ -53,14 +53,14 @@ export const programs = [
         icon: <SiOpenaigym/>,
         title: "Kit Boxing",
         info: "Bringout your aggressive instinct, not a killer instinct!",
-        more:"A combination of primal movements, zero momentum reps & conditioning routines designed to improve muscle endurance and building lasting fitness.",
+        more:"A combination of primal movements, zero momentum reps & conditioning routines designed to improve muscle endurance.",
         path: "/programs/222"
     },
     {
         id: 3,
         icon: <SiOpenaigym/>,
         title: "Dance Fitness",
-        info: "TWork it,Move it,Shake it, Dance!",
+        info: "Work it,Move it,Shake it, Dance!",
         more:"A full body aerobic workout, divided into different genres of music providing peaks and troughs of intensity.Styles include Zumba, LaBlast, Hip Hop Abs, and Bokwa.",
         path: "/programs/333"
     },
