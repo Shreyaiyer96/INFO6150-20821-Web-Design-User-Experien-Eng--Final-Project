@@ -10,8 +10,7 @@ const About = () => {
 	return (
 		<>
 			<Header title="About us" image={HeaderImage}>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maiores
-				doloribus, eligendi incidunt modi rerum debitis consequatur molestias?
+			At Nutri.fit, we make group workouts fun, daily food healthy & tasty, mental fitness easy with yoga & meditation, Medical & lifestyle care hassle-free.#BeBetterEveryDay
 			</Header>
 			<section className="about__story">
 				<div className="container about__story-container">
@@ -21,21 +20,14 @@ const About = () => {
 					<div className="about__section-content">
 						<h1>Our Story</h1>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-							fugit ad neque quo, quas eius quam at sunt quod in atque nulla
-							minus nam impedit tempore consectetur esse quibusdam voluptatum
-							optio nemo! Aperiam veritatis delectus commodi. Minima tempora
-							voluptates natus.
+						Nutri.Fit is a health and fitness company offering 
+						digital and offline experiences across fitness, nutrition, and mental well-being.
 						</p>
 						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Laboriosam harum corrupti quas voluptate, perferendis consectetur
-							veritatis veniam, ratione, distinctio iste dignissimos alias ipsum
-							minima consequuntur?
+						Co-founded by Mrinalini Jadhav, Monalika Pradhan, Krishnanand Jha, Vatsal Kapadia, Tanmay Shekhar and Shreya Iyer the company is headquartered in Boston, Massachusetts.
 						</p>
 						<p>
-							Perferendis consectetur veritatis veniam, ratione, distinctio iste
-							dignissimos alias ipsum minima consequuntur?
+						At Nutri.fit, we make group workouts fun, daily food healthy & tasty, mental fitness easy with yoga & meditation, Medical & lifestyle care hassle-free.#BeBetterEveryDay
 						</p>
 					</div>
 				</div>
@@ -46,14 +38,11 @@ const About = () => {
 					<div className="about__section-content">
 						<h1>Our Vision</h1>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-							fugit ad neque quo, quas eius quam at sunt quod in atque nulla
-							minus nam impedit tempore consectetur esse quibusdam voluptatum.
+						Our Vision is to equip our members with the tools and knowledge they need to achieve their fitness goals while catering to each member’s lifestyle.
+						 Vision is all about guiding our members towards unlocking their potential and helping them be the best version of themselves.
 						</p>
 						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Laboriosam harum corrupti quas voluptate, perferendis consectetur
-							veritatis veniam?
+						We are proud of our state-of-the-art facilities that are unmatched in Boston . Our modern gym equipment, training spaces, Visio plex cardio cinema, and a luxurious member’s lounge offer an extraordinary workout experience.
 						</p>
 					</div>
 					<div className="about__section-image">
@@ -70,14 +59,11 @@ const About = () => {
 					<div className="about__section-content">
 						<h1>Our Mission</h1>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-							fugit ad neque quo, quas eius quam at sunt quod in atque nulla
-							minus nam impedit tempore consectetur esse quibusdam voluptatum.
+						Nutri.Fit's mission is to “make health easy”.
 						</p>
 						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Laboriosam harum corrupti quas voluptate, perferendis consectetur
-							veritatis veniam?
+						Through our products and services, we want to enable people to significantly improve their overall health, 
+						reduce the risk of lifestyle diseases and enable a long, disease free life.
 						</p>
 					</div>
 				</div>
