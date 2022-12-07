@@ -12,8 +12,8 @@ export const links = [
         path: '/about'
     },
     {
-        name: "Store",
-        path: '/gallery'
+        name: "Products",
+        path: '/products'
     },
     {
         name: "Membership Plans",

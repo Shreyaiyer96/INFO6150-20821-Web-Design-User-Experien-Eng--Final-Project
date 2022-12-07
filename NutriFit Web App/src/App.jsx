@@ -15,16 +15,35 @@ import Login from "./pages/login/login";
 import Kitboxing from "./pages/newPages/Kitboxing";
 import DanceFitness from "./pages/newPages/DanceFitness";
 import WeightLifting from "./pages/newPages/WeightLifting";
+import Products from "./pages/Products/Products";
+import { useState, useEffect} from 'react';
+import {commerce} from "./pages/lib/commerce"
+
 
 const App = () => {
-	return (
+	
+	const[products, setProducts] = useState([]);
+
+    const fetchProducts = async () => {
+        const { data } = await commerce.products.list();
+
+        setProducts(data);
+    }
+
+    useEffect (()=>{
+        fetchProducts();
+
+    }, []);
+
+	return(
+
 		<BrowserRouter>
 			<Navbar />
 			<Routes>
 				<Route index element={<Home />} />
 				<Route path="about" element={<About />} />
 				<Route path="contact" element={<Contact />} />
-				<Route path="gallery" element={<Gallery />} />
+				<Route path="Products" element={<Products products={ products } />} />
 				<Route path="plans" element={<Plans />} />
 				<Route path="trainers" element={<Trainers />} />
 				<Route path="login" element={<Login />} />
@@ -36,7 +55,7 @@ const App = () => {
 			</Routes>
 			<Footer />
 		</BrowserRouter>
-	);
+	)
 };
 
 export default App;
