@@ -54,7 +54,7 @@ export const programs = [
         title: "Kit Boxing",
         info: "Bringout your aggressive instinct, not a killer instinct!",
         more:"A combination of primal movements, zero momentum reps & conditioning routines designed to improve muscle endurance.",
-        path: "/programs/222"
+        path: "/newPages"
     },
     {
         id: 3,
@@ -62,7 +62,7 @@ export const programs = [
         title: "Dance Fitness",
         info: "Work it,Move it,Shake it, Dance!",
         more:"A full body aerobic workout, divided into different genres of music providing peaks and troughs of intensity.Styles include Zumba, LaBlast, Hip Hop Abs, and Bokwa.",
-        path: "/programs/333"
+        path: "/newPages"
     },
     {
         id: 4,
@@ -70,7 +70,7 @@ export const programs = [
         title: "Weight Lifting",
         info: "By lifting weights, get on dates!",
         more:"A training methodology that creates stimulus for improved strength & endurance while helping participants build a great physique and all round functional fitness.",
-        path: "/programs/444"
+        path: "/newPages"
     }
 ]
 

@@ -12,6 +12,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Yoga from "./pages/newPages/Yoga";
 import Login from "./pages/login/login";
+import Kitboxing from "./pages/newPages/Kitboxing";
+import DanceFitness from "./pages/newPages/DanceFitness";
+import WeightLifting from "./pages/newPages/WeightLifting";
 
 const App = () => {
 	return (
@@ -26,6 +29,9 @@ const App = () => {
 				<Route path="trainers" element={<Trainers />} />
 				<Route path="login" element={<Login />} />
 				<Route path="newPages" element={<Yoga />} />
+				<Route path="newPages" element={<Kitboxing />} />
+				<Route path="newPages" element={<DanceFitness />} />
+				<Route path="newPages" element={<WeightLifting />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
