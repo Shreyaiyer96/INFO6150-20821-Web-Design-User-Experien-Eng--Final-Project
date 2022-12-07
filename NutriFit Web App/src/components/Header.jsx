@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = ({ title, image, children }) => {
 	return (
-		<header className="header">
+		<header className="header" style={{height:'400px'}}>
 			<div className="header__container">
 				<div className="header__container-lg">
 					<img src={image} alt="Header Background image" />
