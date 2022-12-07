@@ -54,7 +54,7 @@ export const programs = [
         title: "Kit Boxing",
         info: "Bringout your aggressive instinct, not a killer instinct!",
         more:"A combination of primal movements, zero momentum reps & conditioning routines designed to improve muscle endurance.",
-        path: "/newPages"
+        path: "/kickboxing"
     },
     {
         id: 3,
