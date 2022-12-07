@@ -5,6 +5,7 @@ import { programs } from "../data";
 import Card from "../UI/Card";
 import { Link } from "react-router-dom";
 import { AiFillCaretRight } from "react-icons/ai";
+import { Yoga } from "../pages/newPages/Yoga"
 
 const Program = () => {
 	return (

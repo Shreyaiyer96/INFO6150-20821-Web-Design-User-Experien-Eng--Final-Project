@@ -42,7 +42,7 @@ export const programs = [
         title: "Yoga",
         info: "Let's go deeper in your spiritual practice!",
         more: "Every class has an array of breathing techniques, a variety of meditation techniques. Helps in improving confidence while gaining a stronger body.",
-        path: "/programs/111"
+        path: "/newPages"
     },
     {
         id: 2,
