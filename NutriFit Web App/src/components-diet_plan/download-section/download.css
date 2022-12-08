@@ -2,6 +2,8 @@
 
     background: #F5B70A;
     border-radius: 10px;
+    padding-top: 27px;
+    padding-right: 10px;
 }
 
 .app__img{
@@ -32,26 +34,39 @@
     background: #0a071a;
     border: none;
     color: #fff;
-    padding: 7px 25px;
-    border-radius: 5px;
+    padding: 33px 7px;
+    border-radius: 7px;
+    margin-bottom: 27px;
+    width: 26%;
 }
 
 .btn__google{
     background: #fff;
     color: #0a071a;
     border: none;
-    padding: 7px 25px;
-    border-radius: 5px;
+    /* padding: 7px 25px; */
+    padding: 33px 7px;
+    border-radius: 7px;
+    margin-bottom: 27px;
+    width: 26%;
 }
 
 .btn__google i{
     color: #0a071a;
+    
 }
 
 .btn__apple:hover a{
     color: #fff;
+
+    text-decoration: none !important;
+}
+
+.btn__google a{
+    color: black;
 }
 
 .btn__google:hover a{
     color: #0a071a;
+    text-decoration: none !important;
 }

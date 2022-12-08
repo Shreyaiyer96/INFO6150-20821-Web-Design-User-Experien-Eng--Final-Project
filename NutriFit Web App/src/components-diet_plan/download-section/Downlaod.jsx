@@ -13,7 +13,7 @@ const Download = () => {
         <section>
             <Container className="app__container">
                 <Row>
-                    <Col lg='6' md='6'>
+                    <Col lg='4' md='3'>
                         <div className="app__img">
                             <img src={appImg} alt="" />
                         </div>
@@ -27,12 +27,12 @@ const Download = () => {
 
                         <div className="app__btns d-flex align-items-center gap-5 mt-4">
                             <button className="btn__apple d-flex align-items-center gap-3">
-                            <i class="ri-apple-line"></i> <a href="#">Apple Store</a>
+                            <i class="ri-apple-line"></i> <a href="https://www.apple.com/app-store/">Apple Store</a>
                             </button>
 
                             <button className="btn__google d-flex align-items-center gap-3">
                             <i class="ri-google-play-line"></i>{" "}
-                            <a href="#">Google Play Store</a>
+                            <a href="https://play.google.com/store/games?hl=en_US&gl=US">Google Store</a>
                             </button>
 
                         </div>

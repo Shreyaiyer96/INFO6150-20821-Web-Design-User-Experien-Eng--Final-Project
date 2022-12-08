@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 // NavLink comes with an isactive prop which we can use to detect which page we on
 // so we can have a special style for that link
 import React from "react";
-import Logo from "../images/logo.png";
+//import Logo from "../images/logo.png";
 import { links } from "../data";
 import { GoThreeBars } from "react-icons/go";
 import { MdOutlineClose } from "react-icons/md";

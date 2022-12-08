@@ -1,10 +1,10 @@
 // ======= imported  all products images from images folder ========
-import pizzaImg01 from "../images/pizza1.png";
+import pizzaImg01 from "../images/healthyDish.webp";
 
-import fastFood03 from "../images/chicken3.png";
-import fastFood04 from "../images/chicken4.png";
+import fastFood03 from "../images/broccoliBowl.jpeg";
+import fastFood04 from "../images/avacado.webp";
 
-import dessert02 from "../images/dessert02.png";
+import dessert02 from "../images/bananaSmoothie.jpeg";
 import dessert03 from "../images/dessert2.png";
 import dessert04 from "../images/dessert3.png";
 
@@ -15,28 +15,28 @@ import salad from "../images/slider2.png";
 export const popularMenuFood = [
   {
     id: "01",
-    title: "Vegetable Salad",
+    title: "Loaded Broccoli Bowl",
     price: 25,
     imgUrl: fastFood03,
   },
   {
     id: "02",
-    title: "Chicken",
-    price: 250,
+    title: "Avacado & Broccoli Casserole",
+    price: 20,
     imgUrl: fastFood04,
   },
 
   {
     id: "03",
-    title: "Whipped Cream",
-    price: 45,
+    title: "Banana Smoothie",
+    price: 15,
     imgUrl: dessert02,
   },
 
   {
     id: "04",
-    title: "Pizza",
-    price: 75,
+    title: "Shrimp and Cauliflower Bake",
+    price: 24,
     imgUrl: pizzaImg01,
   },
 ];
@@ -44,50 +44,50 @@ export const popularMenuFood = [
 export const fastFoodProducts = [
   {
     id: "05",
-    title: "Burger",
-    price: 95,
+    title: "Baked Banana-Nut Oatmeal Cups",
+    price: 15,
     imgUrl: fastFood04,
   },
   {
     id: "06",
-    title: "Chicken",
-    price: 250,
+    title: "Lemon-Roasted Vegetable Hummus Bowls",
+    price: 25,
     imgUrl: fastFood04,
   },
   {
     id: "07",
-    title: "Grill Chicken",
-    price: 195,
+    title: "Butternut Squash & Black Bean Tostadas",
+    price: 30,
     imgUrl: fastFood04,
   },
   {
     id: "08",
-    title: "Barbeque",
-    price: 275,
+    title: "One-Pot Tomato Basil Pasta",
+    price: 22,
     imgUrl: fastFood04,
   },
   {
     id: "09",
-    title: "Pizza",
-    price: 275,
+    title: "Stuffed Potatoes with Salsa & Beans",
+    price: 12,
     imgUrl: fastFood04,
   },
   {
     id: "10",
-    title: "Burger",
-    price: 95,
+    title: "Vegetarian Tikka Masala",
+    price: 17,
     imgUrl: fastFood04,
   },
   {
     id: "11",
-    title: "Chicken",
-    price: 250,
+    title: "Beefless Vegan Tacos",
+    price: 8,
     imgUrl: fastFood04,
   },
   {
     id: "12",
-    title: "Grill Chicken",
-    price: 195,
+    title: "Whole-Wheat Veggie Wrap",
+    price: 15,
     imgUrl: fastFood04,
   },
 ];
@@ -95,50 +95,50 @@ export const fastFoodProducts = [
 export const riceMenuProducts = [
   {
     id: "12",
-    title: "Fried Rice",
-    price: 95,
+    title: "Vegan Minestrone Soup",
+    price: 27,
     imgUrl: salad,
   },
   {
     id: "14",
-    title: "Vegetable",
-    price: 250,
+    title: "Chicken Parmesan & Quinoa Stuffed Peppers",
+    price: 26,
     imgUrl: salad,
   },
   {
     id: "15",
-    title: "Vegetable Salad",
-    price: 195,
+    title: "Spinach & Artichoke Dip Pasta",
+    price: 20,
     imgUrl: salad,
   },
   {
     id: "16",
-    title: "Meal",
-    price: 275,
+    title: "Chickpea Dumplings in Curried Tomato Sauce",
+    price: 27,
     imgUrl: salad,
   },
   {
     id: "17",
-    title: "Fried Rice",
-    price: 95,
+    title: "Slow-Cooker Mediterranean Stew",
+    price: 16,
     imgUrl: salad,
   },
   {
     id: "18",
-    title: "Vegetable",
-    price: 250,
+    title: "Chipotle Turkey Tostadas",
+    price: 12,
     imgUrl: salad,
   },
   {
     id: "19",
-    title: "Vegetable Salad",
-    price: 195,
+    title: "Polenta Pizza with Mushrooms & Arugula Salad",
+    price: 22,
     imgUrl: salad,
   },
   {
     id: "20",
-    title: "Meal",
-    price: 275,
+    title: "Baked Halibut with Brussels Sprouts & Quinoa",
+    price: 20,
     imgUrl: salad,
   },
 ];
@@ -146,50 +146,50 @@ export const riceMenuProducts = [
 export const dessertProducts = [
   {
     id: "21",
-    title: "Whipped Cream",
-    price: 50,
+    title: "Citrus Poached Salmon with Asparagus",
+    price: 12,
     imgUrl: dessert03,
   },
   {
     id: "22",
-    title: "Cake Cream",
-    price: 50,
+    title: "Avocado-Egg Toast",
+    price: 15,
     imgUrl: dessert02,
   },
   {
     id: "23",
-    title: "Cake",
-    price: 50,
+    title: "Butternut Squash Soup with Avocado & Chickpeas",
+    price: 18,
     imgUrl: dessert03,
   },
   {
     id: "24",
-    title: "Cup Cake",
-    price: 275,
+    title: "Vegan Coconut Chickpea Curry",
+    price: 20,
     imgUrl: dessert04,
   },
   {
     id: "25",
-    title: "Whipped Cream",
-    price: 50,
+    title: "Zucchini Noodles with Pesto & Chicken",
+    price: 27,
     imgUrl: dessert03,
   },
   {
     id: "26",
-    title: "Cake Cream",
-    price: 50,
+    title: "Spicy Jerk Shrimp",
+    price: 26,
     imgUrl: dessert02,
   },
   {
     id: "27",
-    title: "Cake",
-    price: 50,
+    title: "Taco Spaghetti Squash Boats",
+    price: 14,
     imgUrl: dessert03,
   },
   {
     id: "28",
-    title: "Cup Cake",
-    price: 275,
+    title: "Veggie & Hummus Sandwich",
+    price: 18,
     imgUrl: dessert04,
   },
 ];
@@ -197,51 +197,51 @@ export const dessertProducts = [
 export const pizzaProducts = [
   {
     id: "29",
-    title: "Pizza",
-    price: 95,
+    title: "Sprouted-Grain Toast with Peanut Butter & Banana",
+    price: 26,
     imgUrl: pizzaImg01,
   },
   {
     id: "30",
-    title: "Pizza",
-    price: 95,
+    title: "Green Salad with Edamame & Beets",
+    price: 18,
     imgUrl: pizzaImg01,
   },
   {
     id: "31",
-    title: "Pizza",
-    price: 95,
+    title: "Stuffed Sweet Potato with Hummus Dressing",
+    price: 20,
     imgUrl: pizzaImg01,
   },
   {
     id: "32",
-    title: "Pizza",
-    price: 95,
+    title: "Vegan Superfood Grain Bowls",
+    price: 27,
     imgUrl: pizzaImg01,
   },
   {
     id: "33",
-    title: "Pizza",
-    price: 95,
+    title: "Lemon-Garlic Vinaigrette",
+    price: 21,
     imgUrl: pizzaImg01,
   },
   {
     id: "34",
-    title: "Pizza",
-    price: 95,
+    title: "Everything Bagel Avocado Toast",
+    price: 10,
     imgUrl: pizzaImg01,
   },
 
   {
     id: "35",
-    title: "Pizza",
-    price: 95,
+    title: "Colorful Roasted Sheet-Pan Veggies",
+    price: 23,
     imgUrl: pizzaImg01,
   },
   {
     id: "36",
-    title: "Pizza",
-    price: 95,
+    title: "Thai Peanut Curry Noodles",
+    price: 21,
     imgUrl: pizzaImg01,
   },
 ];
@@ -249,51 +249,51 @@ export const pizzaProducts = [
 export const coffeeProducts = [
   {
     id: "37",
-    title: "Hot Coffee",
+    title: "Strawberry Banana Smoothie",
     price: 20,
     imgUrl: coffeeImg02,
   },
   {
     id: "38",
-    title: "Cold Coffee",
+    title: "Tropical Smoothie",
     price: 20,
     imgUrl: coffeeImg02,
   },
   {
     id: "39",
-    title: "Black Coffee",
+    title: "Peach Smoothie",
     price: 20,
     imgUrl: coffeeImg02,
   },
   {
     id: "40",
-    title: "White Coffee",
-    price: 95,
+    title: "Raspberry Smoothie",
+    price: 20,
     imgUrl: coffeeImg02,
   },
   {
     id: "41",
-    title: "Hot Coffee",
+    title: "Green Tea",
     price: 20,
     imgUrl: coffeeImg02,
   },
   {
     id: "42",
-    title: "Cold Coffee",
+    title: "Black COffee",
     price: 20,
     imgUrl: coffeeImg02,
   },
 
   {
     id: "43",
-    title: "Black Coffee",
+    title: "Cherry Smoothie",
     price: 20,
     imgUrl: coffeeImg02,
   },
   {
     id: "44",
-    title: "White Coffee",
-    price: 95,
+    title: "Pina Colada Oat Breakfast Smoothie",
+    price: 20,
     imgUrl: coffeeImg02,
   },
 ];

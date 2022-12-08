@@ -7,28 +7,28 @@ import './menu-pack.css'
 
 const MenuPack = () => {
 
-    const [filter, setFilter] = useState('RICE-MENU')
+    const [filter, setFilter] = useState('High-Fiber-Meal-Plans')
     const [products, setProducts] = useState(riceMenuProducts)
 
     useEffect(()=> {
 
-        if(filter === 'RICE-MENU' ){
+        if(filter === 'High-Fiber-Meal-Plans' ){
             setProducts(riceMenuProducts)
         }
 
-        if(filter === 'FAST-FOOD' ){
+        if(filter === 'Vegetarian-Meal-Plans' ){
             setProducts(fastFoodProducts)
         }
 
-        if(filter === 'PIZZA' ){
+        if(filter === 'Weight-Loss-Meal-Plans' ){
             setProducts(pizzaProducts)
         }
 
-        if(filter === 'DESSERT' ){
+        if(filter === 'Heart-Healthy-Meal-Plans' ){
             setProducts(dessertProducts)
         }
 
-        if(filter === 'COFFEE' ){
+        if(filter === 'DRINKS' ){
             setProducts(coffeeProducts)
         }
 
@@ -39,15 +39,15 @@ const MenuPack = () => {
         <section>
             <Container>
                 <Row>
-                    <Col lg='12' className='text-center mb-4'>
+                    <Col lg='12' className='text-center mb-3'>
                         <h3 className="menu__title"> Our Menu Pack</h3>
                     </Col>
-                    <Col lg='12' className='text-center mb-5'>
-                        <button className={`filter-btn ${filter === 'FAST-FOOD' ? 'active__btn' : ''}`} onClick={()=> setFilter('FAST-FOOD')}>Fast Food</button>
-                        <button className={`filter-btn ${filter === 'RICE-MENU' ? 'active__btn' : ''}`} onClick={()=> setFilter('RICE-MENU')}>Rice Menu</button>
-                        <button className={`filter-btn ${filter === 'PIZZA' ? 'active__btn' : ''}`} onClick={()=> setFilter('PIZZA')}>Pizza</button>
-                        <button className={`filter-btn ${filter === 'DESSERT' ? 'active__btn' : ''}`} onClick={()=> setFilter('DESSERT')}>Dessert</button>
-                        <button className={`filter-btn ${filter === 'COFFEE' ? 'active__btn' : ''}`} onClick={()=> setFilter('COFFEE')}>Coffee</button>
+                    <Col lg='12' className="text-center mb-5">
+                        <button className={`filter-btn ${filter === 'Vegetarian-Meal-Plans' ? 'active__btn' : ''}`} onClick={()=> setFilter('Vegetarian-Meal-Plans')}>Vegetarian</button>
+                        <button className={`filter-btn ${filter === 'High-Fiber-Meal-Plans' ? 'active__btn' : ''}`} onClick={()=> setFilter('High-Fiber-Meal-Plans')}>High Fiber</button>
+                        <button className={`filter-btn ${filter === 'Weight-Loss-Meal-Plans' ? 'active__btn' : ''}`} onClick={()=> setFilter('Weight-Loss-Meal-Plans')}>Weight Loss</button>
+                        <button className={`filter-btn ${filter === 'Heart-Healthy-Meal-Plans' ? 'active__btn' : ''}`} onClick={()=> setFilter('Heart-Healthy-Meal-Plans')}>Vegan</button>
+                        <button className={`filter-btn ${filter === 'DRINKS' ? 'active__btn' : ''}`} onClick={()=> setFilter('DRINKS')}>DRINKS</button>
                     </Col>
 
                     {products.map((item) => (
