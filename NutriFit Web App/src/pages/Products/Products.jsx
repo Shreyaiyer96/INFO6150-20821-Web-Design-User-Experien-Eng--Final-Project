@@ -6,42 +6,43 @@ import useStyles from './styles';
 import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '@material-ui/core';
 import { ShoppingCart } from '@material-ui/icons';
 
+//import useStyles from './styles'
+
 import logo from './assets/images.png';
 
-const Products = ({ products }) => {
+const Products = ({ products, onAddToCart , totalItems }) => {
     const classes= useStyles();
         return ( 
+        <><>
+                <AppBar position="fixed" className={classes.appBar} color="inherit" style={{marginTop:'85px'}}>
+                    <Toolbar>
+                        <Typography variant="h6" className={classes.title} color="inherit">
+                            <img src={logo} alt="NUTRI FIT" height="25px" className={classes.image} />
+                            NUTRI FIT
+                        </Typography>
+                        <div className={classes.grow} />
 
-            <><>
-            <AppBar position="fixed" className={classes.appBar} color="inherit" style={{marginTop:'85px'}}>
-                <Toolbar>
-                    <Typography variant="h6" className={classes.title} color="inherit">
-                        <img src={logo} alt="NUTRI FIT" height="25px" className={classes.image} />
-                        NUTRI FIT
-                    </Typography>
-                    <div className={classes.grow} />
+                        <div className={classes.button}>
+                            <IconButton to="/Cart" aria-label="Show cart items" color="inherit" >
+                                <Badge badgeContent={totalItems} color="secondary">
+                                    <ShoppingCart />
+                                </Badge>
+                            </IconButton>
+                        </div>
+                    </Toolbar>
 
-                    <div className={classes.button}>
-                        <IconButton aria-label="Show cart items" color="inherit">
-                            <Badge badgeContent={2} color="secondary">
-                                <ShoppingCart />
-                            </Badge>
-                        </IconButton>
-                    </div>
-                </Toolbar>
+                </AppBar>
+            </><main className={classes.content}>
+                    <div className={classes.toolbar} />
+                    <Grid container justify="center" spacing={4}>
+                        {products.map((product) => (
+                            <Grid item key={products.id} xs={12} ms={4} lg={3}>
+                                <Product product={product} onAddToCart={onAddToCart}/>
+                            </Grid>
 
-            </AppBar>
-        </><main className={classes.content}>
-                <div className={classes.toolbar} />
-                <Grid container justify="center" spacing={4}>
-                    {products.map((product) => (
-                        <Grid item key={products.id} xs={12} ms={4} lg={3}>
-                            <Product product={product} />
-                        </Grid>
-
-                    ))}
-                </Grid>
-            </main></> 
+                        ))}
+                    </Grid>
+                </main></> 
     )
     
 

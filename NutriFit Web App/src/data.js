@@ -30,6 +30,10 @@ export const links = [
     {
         name: "Profile",
         path: '/login'
+    },
+    {
+        name: "Cart",
+        path: '/Cart'
     }
 ]
 
