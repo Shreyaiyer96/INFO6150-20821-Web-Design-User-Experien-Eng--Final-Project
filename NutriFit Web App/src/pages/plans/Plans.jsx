@@ -4,6 +4,8 @@ import { plans } from "../../data";
 import Header from "../../components/Header";
 import HeaderImage from "../../images/header_bg_4.jpg";
 import Card from "../../UI/Card";
+import { Link } from "react-router-dom";
+
 
 const Plans = () => {
 	return (
@@ -29,9 +31,12 @@ const Plans = () => {
 										</p>
 									);
 								})}
-								<button className="btn lg">Choose Plan</button>
+								{/* <button className="btn lg">Choose Plan</button> */}
+								<br></br><Link to="/products" className="btn lg">
+									Buy Now
+								</Link>
 							</Card>
-						);
+						);	
 					})}
 				</div>
 			</section>
