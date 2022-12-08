@@ -77,6 +77,11 @@
     transition: var(--transition);
 }
 
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
 .btn:hover {
     background: var(--color-secondary);
     color: var(--color-gray-600);

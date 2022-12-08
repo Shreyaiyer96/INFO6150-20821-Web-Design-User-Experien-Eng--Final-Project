@@ -1,5 +1,5 @@
 // rafce -> shortcut to create component and export
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import React from "react";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
@@ -19,13 +19,14 @@ import Products from "./pages/Products/Products";
 import { useState, useEffect} from 'react';
 import {commerce} from "./pages/lib/commerce"
 import Cart  from "./pages/Cart/Cart" ;
-import Login from "./pages/login/components/login_component.js";
-import SignUp from "./pages/login/components/signup_component";
-import UserDetails from "./pages/login/components/userDetails";
 import Checkout from "./pages/checkoutForm/checkout/checkout";
+import Login from "./pages/login/Login";
+import Main from "./pages/login/Main";
+import Signup from "./pages/login/Singup";
 
 
 const App = () => {
+	const user = localStorage.getItem("token");
 	
 	const[products, setProducts] = useState([]);
 	const [cart, setCart]= useState({});
@@ -98,6 +99,10 @@ const App = () => {
 				<Route path="kickboxing" element={<Kickboxing />} />
 				<Route path="dance" element={<Dance />} />
 				<Route path="weight" element={<Weight />} />
+				{user && <Route path="/Main" exact element={<Main />} />}
+				<Route path="/signup" exact element={<Signup />} />
+				<Route path="/login" exact element={<Login />} />
+				<Route path="/" element={<Navigate replace to="/login" />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
