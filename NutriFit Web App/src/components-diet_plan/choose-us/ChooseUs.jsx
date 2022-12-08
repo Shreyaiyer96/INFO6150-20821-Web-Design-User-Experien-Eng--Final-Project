@@ -24,14 +24,14 @@ const ChooseUs = () => {
                                 <div className="single__feature">
                                     <span><i class="ri-truck-line"></i></span>
                                     <h6>Free Home Delivery</h6>
-                                    {/* <p>lorem ipsum dolor sit amet.</p> */}
+                                    
                                 </div>
 
                                 <div className="single__feature">
                                     <span className="feature__icon-two">
                                         <i class="ri-money-dollar-circle-line"></i></span>
                                     <h6>Return $ Refund</h6>
-                                    {/* <p>lorem ipsum dolor sit amet.</p> */}
+                                    
                                 </div>
 
                             </div>
@@ -40,14 +40,14 @@ const ChooseUs = () => {
                                 <div className="single__feature">
                                     <span className="feature__icon-3"><i class="ri-secure-payment-line"></i></span>
                                     <h6>Secure Payments</h6>
-                                    {/* <p>lorem ipsum dolor sit amet.</p> */}
+                                    
                                 </div>
 
                                 <div className="single__feature">
                                     <span className="feature__icon-4">
                                     <i class="ri-24-hours-line"></i></span>
                                     <h6>24/7 Assisstance</h6>
-                                    {/* <p>lorem ipsum dolor sit amet.</p> */}
+                                    
                                 </div>
 
                             </div>

@@ -16,8 +16,8 @@ import veggie8 from "../images/veggie2.jpeg";
 import fiber1 from "../images/fiber1.jpg";
 import fiber2 from "../images/fiber2.jfif";
 import fiber3 from "../images/fiber3.jpg";
-import fiber4 from "../images/fiber4.jpeg";
-import fiber5 from "../images/fiber4.jpeg";
+import fiber4 from "../images/fiber4.jpg";
+import fiber5 from "../images/fiber4.jpg";
 import fiber6 from "../images/fiber3.jpg";
 import fiber7 from "../images/fiber2.jfif";
 import fiber8 from "../images/fiber1.jpg";
@@ -51,12 +51,7 @@ import smoothie7 from "../images/smoothie1.jpg"
 import smoothie8 from "../images/smoothie8.jpg"
 
 import dessert02 from "../images/bananaSmoothie.jpeg";
-// import dessert03 from "../images/dessert2.png";
-// import dessert04 from "../images/dessert3.png";
 
-// import coffeeImg02 from "../images/coffe2.png";
-
-// import salad from "../images/slider2.png";
 
 export const popularMenuFood = [
   {

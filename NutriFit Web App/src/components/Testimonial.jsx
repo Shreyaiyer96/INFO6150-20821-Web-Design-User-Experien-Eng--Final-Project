@@ -34,7 +34,7 @@ const Testimonial = () => {
 			<div className="container testimonial__container">
 				<SectionHead
 					icon={<ImQuotesLeft />}
-					title="Testimonials"
+					title="Client Reviews"
 					className="testimonials__head"
 				/>
 				<Card className="testimonial">
