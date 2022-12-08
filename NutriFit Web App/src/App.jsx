@@ -11,7 +11,7 @@ import DietPlan from "./pages/trainers/Trainers";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Yoga from "./pages/newPages/Yoga";
-import Login from "./pages/login/login";
+// import Login from "./pages/login/login";
 import Kickboxing from "./pages/kickboxing/Kickboxing";
 import { Dance } from "./pages/dance/Dance";
 import Weight from "./pages/weight/Weight";
@@ -19,6 +19,9 @@ import Products from "./pages/Products/Products";
 import { useState, useEffect} from 'react';
 import {commerce} from "./pages/lib/commerce"
 import Cart  from "./pages/Cart/Cart" ;
+import Login from "./pages/login/components/login_component.js";
+import SignUp from "./pages/login/components/signup_component";
+import UserDetails from "./pages/login/components/userDetails";
 
 
 const App = () => {
@@ -63,7 +66,8 @@ const App = () => {
 				<Route path="Cart" element={<Cart cart={cart} />} />
 				<Route path="plans" element={<Plans />} />
 				<Route path="trainers" element={<DietPlan />} />
-				<Route path="login" element={<Login />} />
+				{/* <Route path="login" element={<Login />} /> */}
+				<Route exact path="/login" element={<Login />} />
 				<Route path="newPages" element={<Yoga />} />
 				<Route path="kickboxing" element={<Kickboxing />} />
 				<Route path="dance" element={<Dance />} />
