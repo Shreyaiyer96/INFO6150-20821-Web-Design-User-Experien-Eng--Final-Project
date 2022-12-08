@@ -5,7 +5,7 @@ import Product from "./Product/Product";
 import useStyles from './styles';
 import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '@material-ui/core';
 import { ShoppingCart } from '@material-ui/icons';
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //import useStyles from './styles'
 
@@ -13,7 +13,6 @@ import logo from './assets/images.png';
 
 const Products = ({ products, onAddToCart , totalItems }) => {
     const classes= useStyles();
-    const location= useLocation();
 
     
 
@@ -26,7 +25,7 @@ const Products = ({ products, onAddToCart , totalItems }) => {
                             NUTRI FIT
                         </Typography>
                         <div className={classes.grow} />
-                        {location.pathname=='/Products' &&(
+                        
 
                         <div className={classes.button}>
                             <IconButton component={Link} to="/Cart" aria-label="Show cart items" color="inherit" >
@@ -34,7 +33,7 @@ const Products = ({ products, onAddToCart , totalItems }) => {
                                     <ShoppingCart />
                                 </Badge>
                             </IconButton>
-                        </div>)}
+                        </div>
                     </Toolbar>
 
                 </AppBar>

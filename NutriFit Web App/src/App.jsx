@@ -22,6 +22,7 @@ import Cart  from "./pages/Cart/Cart" ;
 import Login from "./pages/login/components/login_component.js";
 import SignUp from "./pages/login/components/signup_component";
 import UserDetails from "./pages/login/components/userDetails";
+import Checkout from "./pages/checkoutForm/checkout/checkout";
 
 
 const App = () => {
@@ -42,11 +43,35 @@ const App = () => {
 
 
 	 const handleAddToCart = async (productID, quantity) => {
-	 	const item = await commerce.cart.add(productID, quantity);
+	 	const { cart }= await commerce.cart.add(productID, quantity);
 
-	 	setCart(item.cart);
+	 	setCart(cart);
 
 	 }
+
+	 const handleUpdateCartQty = async (productId, quantity) => {
+		const { cart } = await commerce.cart.update(productId, { quantity });
+	
+		setCart(cart);
+	  };
+	
+	  const handleRemoveFromCart = async (productId) => {
+		const { cart } = await commerce.cart.remove(productId);
+	
+		setCart(cart);
+	  };
+	
+	  const handleEmptyCart = async () => {
+		const { cart } = await commerce.cart.empty();
+	
+		setCart(cart);
+	  };
+	
+	  const refreshCart = async () => {
+		const newCart = await commerce.cart.refresh();
+	
+		setCart(newCart);
+	  };
 
 	 useEffect(() => {
 		fetchProducts();
@@ -63,7 +88,8 @@ const App = () => {
 				<Route path="about" element={<About />} />
 				<Route path="contact" element={<Contact />} />
 				<Route path="Products" element={<Products products={products} totalItems={cart.total_items} onAddToCart={handleAddToCart}  />} />
-				<Route path="Cart" element={<Cart cart={cart} />} />
+				<Route path="Cart" element={<Cart cart={cart} onUpdateCartQty={handleUpdateCartQty} onRemoveFromCart={handleRemoveFromCart} onEmptyCart={handleEmptyCart}  />} />
+				<Route path="checkout" element={<Checkout />} />
 				<Route path="plans" element={<Plans />} />
 				<Route path="trainers" element={<DietPlan />} />
 				{/* <Route path="login" element={<Login />} /> */}

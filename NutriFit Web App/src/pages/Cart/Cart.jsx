@@ -10,7 +10,7 @@ import { ShoppingCart } from '@material-ui/icons';
 import { Link,useLocation } from "react-router-dom";
 import logo from '../Products/assets/images.png';
 
-const Cart = ({ cart, totalItems }) => {
+const Cart = ({ cart, totalItems, onUpdateCartQty,onRemoveFromCart, handleEmptyCart }) => {
     
 
     const classes = useStyles();
@@ -27,7 +27,7 @@ const Cart = ({ cart, totalItems }) => {
             <Grid container spacing={3}>
                 {cart.line_items.map((item) => (
                     <Grid item xs={12} sm={4} key={item.id}>
-                        <CartItem item={item} />
+                        <CartItem item={item} onUpdateCartQty={onUpdateCartQty} onRemoveFromCart={onRemoveFromCart}/>
                     </Grid>
                 ))}
             </Grid>
@@ -36,8 +36,8 @@ const Cart = ({ cart, totalItems }) => {
                     Subtotal: {cart.subtotal.formatted_with_symbol}
 
                 </Typography>
-                <div><Button className={classes.emptyButton} size="large" type="button" variant="contained" color="secondary">Empty cart</Button>
-                    <Button className={classes.checkoutButton} to="/checkout" size="large" type="button" variant="contained" color="primary">Checkout</Button></div>
+                <div><Button className={classes.emptyButton} size="large" type="button" variant="contained" color="secondary" onClick={handleEmptyCart} >Empty cart</Button>
+                    <Button component={Link} to="/checkout" className={classes.checkoutButton} size="large" type="button" variant="contained" color="primary">Checkout</Button></div>
             </div>
         </>
     )
