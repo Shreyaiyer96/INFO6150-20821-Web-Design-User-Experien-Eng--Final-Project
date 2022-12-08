@@ -74,6 +74,10 @@ export const programs = [
 
 
 
+const gymequipimage = require('./images/Dumbells.jpeg')
+const nutritionimage = require('./images/ProteinShake.jpeg') 
+const gymaccimage = require('./images/gymacc.jpeg')
+const apparelimage = require('./images/gym-clothes.webp')
 
 
 
@@ -81,26 +85,30 @@ export const values = [
     {
         id: 1,
         icon: <SiOpenaigym/>,
-        title: "Value One",
-        desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum."
+        image: apparelimage ,
+        title: "Apparels",
+        desc: "Shop a wide range of mens and womens workout apparels."
     },
     {
         id: 2,
         icon: <SiOpenaigym/>,
-        title: "Value Two",
-        desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum."
+        image: nutritionimage,
+        title: "Protein Shakes",
+        desc: "In addition to protein our shakes have zinc, potassium and vitamins."
     },
     {
         id: 3,
         icon: <SiOpenaigym/>,
-        title: "Value Three",
-        desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum."
+        image: gymaccimage,
+        title: "Accessories",
+        desc: "Get 20% disccount on all accessories when you buy gold or higher membership."
     },
     {
         id: 4,
         icon: <SiOpenaigym/>,
-        title: "Value Four",
-        desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum."
+        image: gymequipimage,
+        title: "Equipments",
+        desc: "Specialised and certified gym equipments with superior quality."
     }
 ]
 
